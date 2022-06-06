@@ -1,0 +1,21 @@
+.List_Todo_container button {
+  cursor: pointer;
+}
+.List_Todo_container .Add_Todo .add {
+  margin: 0 10px;
+}
+.List_Todo_container .List_Todo_content {
+  width: 400px;
+  margin: 0 auto;
+}
+.List_Todo_container .List_Todo_content .Todo_child {
+  height: 40px;
+  border-bottom: 1px solid grey;
+  margin: 10px;
+}
+.List_Todo_container .List_Todo_content .Todo_child:first-child {
+  border-top: 1px solid grey;
+}
+.List_Todo_container .List_Todo_content .Todo_child .edit {
+  margin: 0 10px;
+}
