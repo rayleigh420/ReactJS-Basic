@@ -5,9 +5,11 @@ import MyComponent from './Example/MyComponent.js';
 import MyForm from './Example/MyForm.js';
 import Home from './Example/Home';
 import Nav from './Nav/Nav';
+import Login from './login_logout/Login';
+import Logout from './login_logout/Logout';
 
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Switch,
   Route,
   Link
@@ -15,7 +17,7 @@ import {
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
         <header className="App-header">
           <Nav />
@@ -25,22 +27,25 @@ function App() {
           </p>
 
           <Switch>
-            <Router path="/" exact>
-              <Home />
-            </Router>
-            <Router path="/todo">
+            <Route path="/" exact>
+              <Login />
+            </Route>
+            {/* <Route path="/todo" exact>
               <ListTodo />
-            </Router>
-            <Router path="/about">
+            </Route>
+            <Route path="/about">
               <MyComponent />
-            </Router>
+            </Route> */}
+            <Route path="/:name">
+              <Logout />
+            </Route>
           </Switch>
           {/* <MyComponent /> */}
           {/* <MyForm /> */}
           {/* <ListTodo /> */}
         </header>
       </div>
-    </Router>
+    </BrowserRouter>
 
   );
 }

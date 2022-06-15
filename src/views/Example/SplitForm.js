@@ -74,4 +74,4 @@ class SplitForm extends React.Component {
     }
 }
 
-export default SplitForm
+export default SplitForm;

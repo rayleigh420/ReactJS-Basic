@@ -13,12 +13,12 @@ class Nav extends React.Component {
                 <a href="/todo">Todos</a>
                 <a href="/about">About</a> */}
 
-                {/* <Link to="/">Home</Link>
+                {/* <Link to="/">Home</Link>    
                 <Link to="/todo">Todos</Link>
                 <Link to="/about">About</Link> */}
 
                 <NavLink to="/" activeClassName="active" exact={true}>Home</NavLink>
-                <NavLink to="/todo" activeClassName="active">Todo</NavLink>
+                <NavLink to="/todo" activeClassName="active" exact={true}>Todo</NavLink>
                 <NavLink to="/about" activeClassName="active">About</NavLink>
             </div>
         )
